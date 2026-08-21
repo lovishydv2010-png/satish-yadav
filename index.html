@@ -5,111 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-        content="Satish Yadav Milk Dairy - Premium quality milk procurement and supply.">
+        content="Satish Yadav Milk Dairy - Quality milk procurement and dairy services.">
 
-  <title>Satish Yadav Milk Dairy | Premium Milk</title>
+  <title>Satish Yadav Milk Dairy | Quality Milk Procurement</title>
 
   <style>
-    /* =========================
-       RESET
-    ========================== */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: "Segoe UI", Arial, sans-serif;
-      background: #f7f2e8;
-      color: #172033;
+      background: #080b18;
+      color: #fff;
       line-height: 1.6;
     }
 
-    /* =========================
-       VARIABLES
-    ========================== */
-    :root {
-      --navy: #07152f;
-      --navy-light: #102653;
-      --gold: #d4af37;
-      --gold-light: #f3d77a;
-      --cream: #fffaf0;
-      --white: #ffffff;
-      --text: #172033;
-      --muted: #687085;
-      --border: rgba(212, 175, 55, 0.35);
-      --shadow: 0 18px 50px rgba(7, 21, 47, 0.14);
-    }
-
-    /* =========================
-       HEADER
-    ========================== */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(7, 21, 47, 0.97);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.35);
-      backdrop-filter: blur(12px);
-    }
-
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      min-height: 76px;
-      padding: 0 24px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
-    .logo {
-      color: var(--white);
-      text-decoration: none;
-      font-size: 21px;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-    }
-
-    .logo span {
-      color: var(--gold-light);
-    }
-
-    nav {
-      display: flex;
-      gap: 26px;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--gold-light);
-    }
-
-    /* =========================
-       HERO
-    ========================== */
+    /* HERO */
     .hero {
-      min-height: 680px;
-      background:
-        radial-gradient(circle at 80% 25%, rgba(212,175,55,0.16), transparent 30%),
-        linear-gradient(135deg, #07152f 0%, #0c1d42 55%, #07152f 100%);
-
+      min-height: 100vh;
       display: flex;
       align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at top, #35206b 0%, #11152d 42%, #060811 100%);
       position: relative;
       overflow: hidden;
     }
@@ -119,423 +42,255 @@
       position: absolute;
       width: 420px;
       height: 420px;
-      border: 1px solid rgba(212,175,55,0.18);
+      background: #d4af37;
+      opacity: 0.08;
       border-radius: 50%;
+      top: -150px;
       right: -120px;
-      top: 90px;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 260px;
-      height: 260px;
-      border: 1px solid rgba(212,175,55,0.13);
-      border-radius: 50%;
-      right: 40px;
-      top: 170px;
+      filter: blur(5px);
     }
 
     .hero-content {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 80px 24px;
+      max-width: 900px;
       position: relative;
       z-index: 2;
     }
 
     .badge {
       display: inline-block;
-      color: var(--gold-light);
-      border: 1px solid rgba(212,175,55,0.5);
-      background: rgba(212,175,55,0.08);
-      padding: 9px 17px;
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 24px;
+      padding: 8px 18px;
+      border: 1px solid #d4af37;
+      border-radius: 30px;
+      color: #f4d675;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 22px;
+      text-transform: uppercase;
     }
 
-    .hero h1 {
-      max-width: 850px;
-      color: white;
-      font-size: clamp(42px, 7vw, 76px);
+    h1 {
+      font-size: clamp(42px, 8vw, 78px);
       line-height: 1.05;
-      letter-spacing: -2px;
-      margin-bottom: 25px;
-    }
-
-    .hero h1 span {
-      color: var(--gold-light);
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #fff, #f4d675, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .hero p {
+      color: #d7d9e7;
+      font-size: 19px;
       max-width: 700px;
-      color: #dce3f0;
-      font-size: 18px;
-      margin-bottom: 35px;
+      margin: auto;
     }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+    .gold-line {
+      width: 100px;
+      height: 3px;
+      background: #d4af37;
+      margin: 28px auto;
+      border-radius: 10px;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 25px;
-      border-radius: 9px;
+      margin-top: 28px;
+      padding: 14px 30px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #d4af37, #f5dc7a);
+      color: #17120a;
       text-decoration: none;
-      font-weight: 800;
+      font-weight: 700;
       transition: 0.3s;
+      box-shadow: 0 10px 30px rgba(212,175,55,0.2);
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, #d4af37, #f3d77a);
-      color: #07152f;
-      box-shadow: 0 8px 25px rgba(212,175,55,0.22);
-    }
-
-    .btn-primary:hover {
+    .btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 14px 30px rgba(212,175,55,0.3);
+      box-shadow: 0 15px 35px rgba(212,175,55,0.35);
     }
 
-    .btn-outline {
-      color: white;
-      border: 1px solid rgba(255,255,255,0.35);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--gold-light);
-      color: var(--gold-light);
-    }
-
-    /* =========================
-       GENERAL
-    ========================== */
+    /* GENERAL */
     section {
-      padding: 90px 24px;
+      padding: 80px 20px;
     }
 
     .container {
-      max-width: 1150px;
+      max-width: 1100px;
       margin: auto;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 55px;
+      font-size: 38px;
+      margin-bottom: 12px;
+      color: #f4d675;
     }
 
-    .section-title small {
-      color: #a07c14;
-      text-transform: uppercase;
-      font-weight: 800;
-      letter-spacing: 2px;
+    .section-subtitle {
+      text-align: center;
+      color: #aeb3c7;
+      margin-bottom: 45px;
     }
 
-    .section-title h2 {
-      margin-top: 10px;
-      font-size: clamp(30px, 5vw, 46px);
-      color: var(--navy);
-    }
-
-    .section-title p {
-      max-width: 650px;
-      margin: 12px auto 0;
-      color: var(--muted);
-    }
-
-    /* =========================
-       PRICE CARDS
-    ========================== */
-    .price-grid {
+    /* INFO CARDS */
+    .cards {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-    }
-
-    .price-card {
-      background: white;
-      border-radius: 18px;
-      padding: 38px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .price-card::after {
-      content: "₹";
-      position: absolute;
-      right: 20px;
-      top: -20px;
-      font-size: 150px;
-      font-weight: 900;
-      color: rgba(212,175,55,0.07);
-    }
-
-    .price-card h3 {
-      color: var(--navy);
-      font-size: 21px;
-      margin-bottom: 10px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .price {
-      font-size: 52px;
-      color: #9b7612;
-      font-weight: 900;
-      position: relative;
-      z-index: 1;
-    }
-
-    .price span {
-      font-size: 16px;
-      color: var(--muted);
-      font-weight: 600;
-    }
-
-    .price-card p {
-      color: var(--muted);
-      position: relative;
-      z-index: 1;
-    }
-
-    /* =========================
-       QUALITY
-    ========================== */
-    .quality {
-      background: var(--navy);
-      color: white;
-    }
-
-    .quality .section-title h2 {
-      color: white;
-    }
-
-    .quality .section-title p {
-      color: #c5cede;
-    }
-
-    .quality-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 22px;
     }
 
-    .quality-card {
-      background: linear-gradient(145deg, #102653, #0a1937);
-      border: 1px solid rgba(212,175,55,0.28);
-      padding: 32px 25px;
-      border-radius: 16px;
+    .card {
+      background: linear-gradient(145deg, #151a35, #0d1021);
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 20px;
+      padding: 30px 24px;
       text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #d4af37;
     }
 
     .icon {
-      width: 62px;
-      height: 62px;
-      margin: 0 auto 18px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(212,175,55,0.12);
-      border: 1px solid rgba(212,175,55,0.4);
-      font-size: 27px;
-    }
-
-    .quality-card h3 {
-      color: var(--gold-light);
-      margin-bottom: 10px;
-    }
-
-    .quality-card p {
-      color: #cbd5e5;
-      font-size: 14px;
-    }
-
-    /* =========================
-       POLICY
-    ========================== */
-    .policy-box {
-      background: white;
-      border-left: 5px solid var(--gold);
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: var(--shadow);
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .policy-box h3 {
-      color: var(--navy);
-      margin-bottom: 12px;
-      font-size: 25px;
-    }
-
-    .policy-box p {
-      color: var(--muted);
-    }
-
-    .policy-box strong {
-      color: #8b680d;
-    }
-
-    /* =========================
-       TIMINGS
-    ========================== */
-    .timing-section {
-      background: #fffaf0;
-    }
-
-    .timing-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .timing-card {
-      background: white;
-      border-radius: 17px;
-      padding: 35px;
-      text-align: center;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-    }
-
-    .timing-card .time-icon {
       font-size: 38px;
-      margin-bottom: 10px;
-    }
-
-    .timing-card h3 {
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-
-    .timing-card p {
-      color: #9b7612;
-      font-size: 21px;
-      font-weight: 800;
-    }
-
-    /* =========================
-       CONTACT
-    ========================== */
-    .contact {
-      background: linear-gradient(135deg, #07152f, #102653);
-      color: white;
-    }
-
-    .contact-box {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .contact-box h2 {
-      font-size: clamp(32px, 5vw, 48px);
       margin-bottom: 15px;
     }
 
-    .contact-box p {
-      color: #ccd6e6;
-      margin-bottom: 28px;
+    .card h3 {
+      color: #f4d675;
+      margin-bottom: 10px;
+      font-size: 21px;
     }
 
-    .email {
-      display: inline-block;
-      color: var(--gold-light);
-      font-size: 19px;
-      font-weight: 800;
-      text-decoration: none;
-      margin-bottom: 28px;
+    .card p {
+      color: #c3c6d6;
     }
 
-    /* =========================
-       FOOTER
-    ========================== */
-    footer {
-      background: #040d1d;
-      color: #aeb8c8;
+    /* QUALITY */
+    .quality {
+      background: linear-gradient(180deg, #0a0d1c, #11152b);
+    }
+
+    .quality-box {
+      max-width: 850px;
+      margin: auto;
+      background: linear-gradient(145deg, #171c3a, #0d1022);
+      padding: 40px;
+      border-radius: 24px;
+      border: 1px solid rgba(212,175,55,0.3);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+
+    .quality-box ul {
+      list-style: none;
+    }
+
+    .quality-box li {
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: #dddfee;
+      font-size: 17px;
+    }
+
+    .quality-box li:last-child {
+      border-bottom: none;
+    }
+
+    .quality-box strong {
+      color: #f4d675;
+    }
+
+    /* TIMINGS */
+    .timing {
       text-align: center;
-      padding: 28px 20px;
-      font-size: 13px;
+      background: #080b18;
     }
 
-    footer strong {
-      color: var(--gold-light);
+    .timing-card {
+      max-width: 650px;
+      margin: auto;
+      padding: 35px;
+      background: linear-gradient(145deg, #151a35, #0d1021);
+      border-radius: 24px;
+      border: 1px solid rgba(212,175,55,0.25);
     }
 
-    /* =========================
-       MOBILE
-    ========================== */
-    @media (max-width: 800px) {
+    .time {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 5px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
 
-      nav {
-        display: none;
-      }
+    .time:last-child {
+      border-bottom: none;
+    }
 
-      .hero {
-        min-height: 620px;
-      }
+    .time span:first-child {
+      color: #f4d675;
+      font-weight: 700;
+    }
 
-      .hero h1 {
-        letter-spacing: -1px;
-      }
+    .time span:last-child {
+      color: #d7d9e7;
+    }
 
-      .hero p {
-        font-size: 16px;
-      }
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      background:
+        radial-gradient(circle at center, #24164d 0%, #080b18 65%);
+    }
 
-      .price-grid,
-      .quality-grid,
-      .timing-grid {
-        grid-template-columns: 1fr;
-      }
+    .phone {
+      display: inline-block;
+      font-size: 30px;
+      color: #f4d675;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 15px;
+    }
 
+    .phone:hover {
+      color: #fff;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #05060d;
+      color: #777d94;
+      font-size: 14px;
+      border-top: 1px solid rgba(212,175,55,0.15);
+    }
+
+    footer span {
+      color: #d4af37;
+    }
+
+    @media (max-width: 600px) {
       section {
-        padding: 70px 18px;
+        padding: 60px 16px;
       }
 
-      .price-card {
-        padding: 30px;
-      }
-    }
-
-    @media (max-width: 450px) {
-
-      .nav {
-        padding: 0 16px;
+      .quality-box {
+        padding: 25px 20px;
       }
 
-      .logo {
-        font-size: 17px;
-      }
-
-      .hero-content {
-        padding: 65px 18px;
-      }
-
-      .buttons {
+      .time {
         flex-direction: column;
-      }
-
-      .btn {
+        gap: 5px;
         text-align: center;
-        width: 100%;
       }
 
-      .price {
-        font-size: 45px;
+      .phone {
+        font-size: 24px;
       }
     }
   </style>
@@ -543,106 +298,122 @@
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
-  <header>
-    <div class="nav">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
 
-      <a href="#home" class="logo">
-        SATISH YADAV <span>MILK DAIRY</span>
-      </a>
+      <div class="badge">Premium Dairy Collection</div>
 
-      <nav>
-        <a href="#about">About</a>
-        <a href="#rates">Rates</a>
-        <a href="#quality">Quality</a>
-        <a href="#timing">Timing</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <h1>Satish Yadav<br>Milk Dairy</h1>
+
+      <div class="gold-line"></div>
+
+      <p>
+        Committed to quality milk procurement with strict standards,
+        fair rates and reliable dairy service.
+      </p>
+
+      <a href="#contact" class="btn">Contact Dairy</a>
 
     </div>
   </header>
 
 
-  <!-- =========================
-       HERO
-  ========================== -->
-  <section class="hero" id="home">
+  <!-- ABOUT -->
+  <section>
+    <div class="container">
 
-    <div class="hero-content">
+      <h2 class="section-title">Our Standards</h2>
 
-      <div class="badge">
-        PREMIUM MILK PROCUREMENT & SUPPLY
-      </div>
-
-      <h1>
-        Quality Milk.<br>
-        <span>Trusted Dairy.</span>
-      </h1>
-
-      <p>
-        Satish Yadav Milk Dairy is committed to sourcing and supplying
-        quality milk with a strong focus on purity, consistency and
-        responsible dairy standards.
+      <p class="section-subtitle">
+        Quality comes first in every litre of milk we purchase.
       </p>
 
-      <div class="buttons">
+      <div class="cards">
 
-        <a href="#rates" class="btn btn-primary">
-          View Milk Rates
-        </a>
+        <div class="card">
+          <div class="icon">🥛</div>
+          <h3>Quality Milk</h3>
+          <p>
+            We strictly purchase good-quality milk from reliable sources.
+          </p>
+        </div>
 
-        <a href="#contact" class="btn btn-outline">
-          Contact Dairy
-        </a>
+        <div class="card">
+          <div class="icon">⭐</div>
+          <h3>High SNF</h3>
+          <p>
+            Milk must have SNF above <strong>95</strong> to meet our required standard.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⚖️</div>
+          <h3>Fair Rate</h3>
+          <p>
+            Milk purchase rate is <strong>₹84 at 100 FAT</strong>.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏆</div>
+          <h3>Trusted Service</h3>
+          <p>
+            Professional and consistent dairy operations focused on quality.
+          </p>
+        </div>
 
       </div>
-
     </div>
-
   </section>
 
 
-  <!-- =========================
-       ABOUT
-  ========================== -->
-  <section id="about">
+  <!-- QUALITY DETAILS -->
+  <section class="quality">
 
     <div class="container">
 
-      <div class="section-title">
+      <h2 class="section-title">Milk Quality Requirements</h2>
 
-        <small>About Our Dairy</small>
+      <p class="section-subtitle">
+        Strict standards help us maintain better milk quality.
+      </p>
 
-        <h2>Built Around Quality</h2>
+      <div class="quality-box">
 
-        <p>
-          We believe that good milk starts with careful sourcing.
-          Our dairy follows strict quality preferences while working
-          with suppliers for consistent milk quality.
-        </p>
+        <ul>
 
-      </div>
+          <li>
+            <strong>Purchase Rate:</strong>
+            ₹84 at 100 FAT
+          </li>
 
-      <div class="policy-box">
+          <li>
+            <strong>Required SNF:</strong>
+            Above 95
+          </li>
 
-        <h3>Our Milk Quality Policy</h3>
+          <li>
+            <strong>Milk Quality:</strong>
+            Only good-quality milk is accepted
+          </li>
 
-        <p>
-          We <strong>strictly purchase good-quality milk</strong>.
-          Our preferred milk quality standard requires
-          <strong>SNF above 98</strong>. We focus on maintaining
-          consistent quality rather than accepting milk that does not
-          meet our requirements.
-        </p>
+          <li>
+            <strong>Cow Milk:</strong>
+            We avoid cow milk
+          </li>
 
-        <br>
+          <li>
+            <strong>Selling Rate:</strong>
+            ₹70 per kg
+          </li>
 
-        <p>
-          We also <strong>avoid cow milk</strong> as part of our
-          procurement preference.
-        </p>
+          <li>
+            <strong>Quality Policy:</strong>
+            Milk is checked according to our required standards before acceptance.
+          </li>
+
+        </ul>
 
       </div>
 
@@ -651,57 +422,27 @@
   </section>
 
 
-  <!-- =========================
-       RATES
-  ========================== -->
-  <section id="rates">
+  <!-- TIMING -->
+  <section class="timing">
 
     <div class="container">
 
-      <div class="section-title">
+      <h2 class="section-title">Collection Timings</h2>
 
-        <small>Transparent Rates</small>
+      <p class="section-subtitle">
+        Milk collection is available during the following hours.
+      </p>
 
-        <h2>Our Milk Rates</h2>
+      <div class="timing-card">
 
-        <p>
-          Clear pricing with quality-focused procurement and supply.
-        </p>
-
-      </div>
-
-      <div class="price-grid">
-
-        <div class="price-card">
-
-          <h3>Milk Purchase Rate</h3>
-
-          <div class="price">
-            ₹84 <span>/ 100 FAT</span>
-          </div>
-
-          <p>
-            We purchase qualifying milk at a rate of
-            <strong>₹84 per 100 FAT</strong>, subject to our
-            quality requirements.
-          </p>
-
+        <div class="time">
+          <span>🌅 Morning</span>
+          <span>5:00 AM – 8:00 AM</span>
         </div>
 
-
-        <div class="price-card">
-
-          <h3>Milk Selling Rate</h3>
-
-          <div class="price">
-            ₹70 <span>/ kg</span>
-          </div>
-
-          <p>
-            Our milk selling rate is
-            <strong>₹70 per kilogram</strong>.
-          </p>
-
+        <div class="time">
+          <span>🌆 Evening</span>
+          <span>5:00 PM – 8:00 PM</span>
         </div>
 
       </div>
@@ -711,171 +452,35 @@
   </section>
 
 
-  <!-- =========================
-       QUALITY
-  ========================== -->
-  <section class="quality" id="quality">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <small>Our Standards</small>
-
-        <h2>Quality Comes First</h2>
-
-        <p>
-          Every part of our procurement approach is focused on
-          maintaining reliable milk quality.
-        </p>
-
-      </div>
-
-      <div class="quality-grid">
-
-        <div class="quality-card">
-
-          <div class="icon">✓</div>
-
-          <h3>Good Quality Milk</h3>
-
-          <p>
-            We strictly prefer and purchase milk that meets our
-            quality expectations.
-          </p>
-
-        </div>
-
-
-        <div class="quality-card">
-
-          <div class="icon">98+</div>
-
-          <h3>SNF Standard</h3>
-
-          <p>
-            Our stated requirement is SNF above 98 for the milk
-            we accept.
-          </p>
-
-        </div>
-
-
-        <div class="quality-card">
-
-          <div class="icon">✦</div>
-
-          <h3>Procurement Preference</h3>
-
-          <p>
-            We avoid cow milk according to our dairy's
-            procurement preference.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       TIMING
-  ========================== -->
-  <section class="timing-section" id="timing">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <small>Visit / Supply Hours</small>
-
-        <h2>Dairy Timing</h2>
-
-        <p>
-          Please visit or contact us during the available hours.
-        </p>
-
-      </div>
-
-      <div class="timing-grid">
-
-        <div class="timing-card">
-
-          <div class="time-icon">🌅</div>
-
-          <h3>Morning</h3>
-
-          <p>5:00 AM – 8:00 AM</p>
-
-        </div>
-
-
-        <div class="timing-card">
-
-          <div class="time-icon">🌙</div>
-
-          <h3>Evening</h3>
-
-          <p>5:00 PM – 8:00 PM</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       CONTACT
-  ========================== -->
+  <!-- CONTACT -->
   <section class="contact" id="contact">
 
     <div class="container">
 
-      <div class="contact-box">
+      <h2 class="section-title">Get In Touch</h2>
 
-        <h2>Get In Touch</h2>
+      <p class="section-subtitle">
+        For dairy-related enquiries, contact us directly.
+      </p>
 
-        <p>
-          For milk procurement, rates, availability or other
-          dairy-related enquiries, contact us by email.
-        </p>
+      <a class="phone" href="tel:9990749899">
+        📞 9990749899
+      </a>
 
-        <a
-          class="email"
-          href="mailto:lovishydv2010@gmail.com">
-          lovishydv2010@gmail.com
-        </a>
+      <br>
 
-        <br>
-
-        <a
-          href="mailto:lovishydv2010@gmail.com"
-          class="btn btn-primary">
-          Send Email
-        </a>
-
-      </div>
+      <a href="tel:9990749899" class="btn">
+        Call Now
+      </a>
 
     </div>
 
   </section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+  <!-- FOOTER -->
   <footer>
-
-    © 2026
-    <strong>Satish Yadav Milk Dairy</strong>.
-    All rights reserved.
-
+    © 2026 <span>Satish Yadav Milk Dairy</span> — Quality • Trust • Service
   </footer>
 
 </body>
